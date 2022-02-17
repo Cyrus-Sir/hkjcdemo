@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<section layout:fragment="custContent">
+    <table class="table table-striped">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+        <tr th:each="ac : ${allContacts}">
+            <td th:text="${ac.cid}" />
+            <td th:text="${ac.name}" />
+            <td th:text="${ac.phone}" />
+            <td>
+                <a th:href="@{/edit/{cid}(cid = ${ac.cid})}" class="btn btn-primary">Edit</a> &nbsp; | &nbsp;
+                <a th:href="@{/delete/{cid}(cid = ${ac.cid})}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    </table>
+</section>
+</body>
+</html>
