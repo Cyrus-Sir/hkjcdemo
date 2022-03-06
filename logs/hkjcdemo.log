@@ -1,0 +1,5 @@
+[INFO ] 2022-03-06 21:27:52.354 [main] HkjcdemoApplication - Starting HkjcdemoApplication using Java 11.0.8 on DESKTOP-114OIE6 with PID 12872 (D:\Workspace\Java\hkjcdemo\target\classes started by Cyrus Cheng in D:\Workspace\Java\hkjcdemo)
+[INFO ] 2022-03-06 21:27:52.360 [main] HkjcdemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-03-06 21:27:54.434 [main] HkjcdemoApplication - Started HkjcdemoApplication in 2.28 seconds (JVM running for 2.822)
+[INFO ] 2022-03-06 21:27:57.762 [http-nio-8080-exec-1] ContactsController - Editing contact with Id : 2
+[INFO ] 2022-03-06 21:28:03.063 [http-nio-8080-exec-2] ContactsController - Updated contact : Contacts{cid=2, name='Cyrus', phone='87654321'}
